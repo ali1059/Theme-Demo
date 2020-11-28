@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #eeeeee;
+}
+
+.inputpage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputpage-title {
+  margin: 2em 0;
+}
+
+.Dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 8rem;
+  overflow: hidden;
+}
+
+.Dialog-icon {
+  margin: 0.3rem 1rem;
+}
+
+.output-btn {
+  background: linear-gradient(270deg, #26dfbf 0%, #1fcaa6 42.61%, #16ae85 100%);
+  border-radius: 1px;
+  border: none;
+  padding: 0.75em 2.3em;
+}
+
+//Input style
+
+// tooltip css
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  font-size: 11px;
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 4px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+// preview styles
+.preview-container {
+  display: flex;
+  justify-content: center;
+  color: red;
+}
+
+.view-container {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+  width: 180px;
+  color: #001;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+}
+
+.sticky-btn {
+  position: absolute;
+  bottom: 0;
+}
+
+.view-container-item {
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  width: 30vw;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.form-input:focus {
+  border: 3px solid #555;
+}
+
+//output page styles
+
+.outputpage-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.outputpage-item {
+  margin: 2rem 0;
+}
+
+.outputpage-container {
+  text-align: center;
+}

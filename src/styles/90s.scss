@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+// font-family: 'Pangolin', cursive;
+
+.theme_90s {
+  font-family: "Goldman", cursive;
+  background: #90dcff;
+
+  button {
+    background: #9effb8;
+    color: black;
+    padding: 0.5em;
+    font-size: 22px;
+  }
+}
