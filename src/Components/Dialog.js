@@ -24,7 +24,7 @@ const DialogBox = ({ open, setOpen, themeSettings }) => {
             onClick={() => setPreview("Desktop")}
             icon={faDesktop}
             color="black"
-            size="4x"
+            size="2x"
           />
         </Tooltip>
 
@@ -34,7 +34,7 @@ const DialogBox = ({ open, setOpen, themeSettings }) => {
             onClick={() => setPreview("Mobile")}
             icon={faMobileAlt}
             color="black"
-            size="4x"
+            size="2x"
           />
         </Tooltip>
       </div>

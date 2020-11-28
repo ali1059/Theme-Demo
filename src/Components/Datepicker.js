@@ -7,7 +7,7 @@ const DatePicker = ({ setDate }) => {
 
   return (
     <div className="form-container">
-      <label for="datepicker">Please provide date</label>
+      <label htmlFor="datepicker">Please provide date</label>
       <input
         className="form-input"
         onChange={handleDateChange}

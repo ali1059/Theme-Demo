@@ -10,7 +10,7 @@ const Preview = ({ themeSettings, preview }) => (
       </p>
       <p className="view-container-item">{themeSettings.messageTitle}: Hello</p>
       {preview == "Desktop" ? (
-        <button>Try Theme</button>
+        <button className="view-container-btn">Try Theme</button>
       ) : (
         <button className="sticky-btn">Try Theme</button>
       )}

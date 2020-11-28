@@ -19,6 +19,7 @@ const RadioButtons = ({
   const [value, setValue] = React.useState("female");
 
   const handleChange = (event) => {
+    console.log("HELLO =>", event.target.value);
     setValue(event.target.value);
     const settings = ThemesData.filter(
       (item) => item.title == event.target.value
@@ -36,37 +37,33 @@ const RadioButtons = ({
     setThemeSettings(settings[0]);
   };
 
-  console.log(
-    "themeOptions/////////",
-    themeOptions,
-    "ThemesData = ",
-    ThemesData
-  );
-
   return (
-    <FormControl className="input-margin" component="fieldset">
-      <FormLabel component="legend">Choose Theme</FormLabel>
-      <RadioGroup
-        aria-label="theme"
-        name="theme"
-        value={value}
-        onChange={handleChange}
-      >
-        {themeOptions.map((item, index) => (
-          <div key={index}>
-            <FormControlLabel value={item} control={<Radio />} label={item} />
-            <Tooltip text="Preview Theme">
-              <FontAwesomeIcon
-                onClick={() => handlePreview(item)}
-                icon={faEye}
-                color="black"
-                size="sm"
-              />
-            </Tooltip>
-          </div>
-        ))}
-      </RadioGroup>
-    </FormControl>
+    // <FormControl className="input-margin" component="fieldset">
+    <div className="radiobtn-mainwrapper">
+      <h3>Choose Theme</h3>
+      {themeOptions.map((item, index) => (
+        <div className="radiobtn-wrapper" key={index}>
+          <label className="radiobtn-container">
+            {item}
+            <input
+              onChange={handleChange}
+              type="radio"
+              name="theme"
+              value={item}
+            />
+            <span className="checkmark"></span>
+          </label>
+          <Tooltip text="Preview Theme">
+            <FontAwesomeIcon
+              onClick={() => handlePreview(item)}
+              icon={faEye}
+              color="black"
+              size="sm"
+            />
+          </Tooltip>
+        </div>
+      ))}
+    </div>
   );
 };
 

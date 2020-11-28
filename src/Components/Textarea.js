@@ -10,9 +10,10 @@ const TextArea = ({ setText }) => {
   };
   return (
     <div className="form-container">
-      <label for="textArea">Please provide message</label>
+      <label htmlFor="textArea">Please provide message</label>
       <textarea
         className="form-input"
+        placeholder="Enter Message"
         id="textArea"
         label="Please
       provide message"
